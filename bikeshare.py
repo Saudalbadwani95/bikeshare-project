@@ -148,7 +148,7 @@ def trip_duration_stats(df):
     total_travel_time_sec = sum(df['Trip Duration']) # taking the sum of Trip Duration column
     as_hours = (total_travel_time_sec/3600).__round__(0) # changing from second to hours
     as_day = (as_hours/24).__round__(0) # changing from hours to days
-    print('Total travel time: ',as_hours , ' Hours or ', as_day, 'days') # Display the total travel time
+    print('Total travel time: ',as_hours , ' Hours or ', as_day, 'days') # Display the total travel time as hours or as days
 
     # TO DO: display mean travel time
 
@@ -212,9 +212,9 @@ def main():
         user_stats(df)
 
 
-        ''' the loop is asking if the user want to see raw data 
-            if the user type yes it wll shows 5 rows of data 
-            if the user type yes again it will shows the next 
+        ''' the loop is asking if the user want to see raw data
+            if the user type yes it wll shows 5 rows of data
+            if the user type yes again it will shows the next
             it the user type no it will exit the loop'''
         n = 0
         while (n < df.shape[0]):
