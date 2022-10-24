@@ -82,7 +82,7 @@ def get_filters_and_laod_data():
 
     print('-'*40)
 
-    return df
+    return df #return the filter df for to be used in the following functions
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -212,9 +212,9 @@ def main():
         user_stats(df)
 
 
-        ''' the loop is asking if the user want to see raw data 
-            if the user type yes it wll shows 5 rows of data 
-            if the user type yes again it will shows the next 
+        ''' the loop is asking if the user want to see raw data
+            if the user type yes it wll shows 5 rows of data
+            if the user type yes again it will shows the next
             it the user type no it will exit the loop'''
         n = 0
         while (n < df.shape[0]):
