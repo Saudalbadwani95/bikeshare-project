@@ -82,7 +82,7 @@ def get_filters_and_laod_data():
 
     print('-'*40)
 
-    return df
+    return df #return the filter df for to be used in the following functions
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -226,7 +226,7 @@ def main():
             elif raw_data == 'no':
                 break
         pass
-
+            # the following code ask the user if they want to restar 
         restart = input('\nWould you like to restart? Enter yes or no: ')
         if restart.lower() != 'yes':
             break
