@@ -11,7 +11,7 @@ def get_filters_and_laod_data():
     Asks user to specify a city, month, and day to analyze.
     Then loads the data for the entered inputs and dealing with NaN values
 
-    finally return the dataframe (df)
+    finally return the dataframe (df) to be used in the comming functions
 
     """
     print('Hello! Let\'s explore some US bikeshare data!')
